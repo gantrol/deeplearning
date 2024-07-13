@@ -2,7 +2,7 @@
 
 ## Deep learning
 
-- building-deep-learning-framework
+- [deep-learning-from-scratch](https://github.com/oreilly-japan/deep-learning-from-scratch-3)
 
 ## AI
 
