@@ -6,7 +6,13 @@
 
 ## AI
 
-- slp3
+- [slp3](https://web.stanford.edu/~jurafsky/slp3/)
+- math
+  - [22. Appendix: Mathematics for Deep Learning — Dive into Deep Learning 1.0.3 documentation (d2l.ai)](https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/)
+  - _Linear Algebra Done the Right_
+  - _Principles of Mathematical Analysis_ by Walter Rudin
+  - ...
+- ...
 
 ## Theory
 
