@@ -1,1 +1,10 @@
 */ignore/
+books/*
+/llm/nn-zero-to-hero/build-nanogpt/
+/llm/nn-zero-to-hero/nn-zero-to-hero/
+
+.idea/*
+
+# videos
+*.vtt
+*webm
