@@ -1,0 +1,1 @@
+[I 2024-07-19 21:12:14,184] Trial 8 finished with value: 1.9893802925944328 and parameters: {'embedding_size': 146, 'hidden_size': 684, 'learning_rate': 0.000675497603890277, 'batch_size': 32, 'context_length': 4}. Best is trial 8 with value: 1.9893802925944328.
