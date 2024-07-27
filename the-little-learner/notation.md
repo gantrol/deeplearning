@@ -4,20 +4,20 @@ We write some of our functions using a more compact notation so that they are ea
 
 The first column in the table below refers to the earliest occurrence in the book of the notation shown in the second column. The third column shows how to transcribe our programs, e.g., `[ 5 (+ 10 2) 28 ]` is transcribed as `(tensor 5 (+ 10 2) 28)`.
 
-| Page:Frame | Notation                | Transcription              |
-|------------|-------------------------|----------------------------|
-| 24:17      | `[ t ts …]`             | `(tensor t ts …)`          |
-| 26:24      | `li`                    | `(ref l i)`                |
-| 27:27      | `(list m …)`            | `(list m …)`               |
-| 33:17      | ?                       | `(tlen t)`                 |
-| 36:24      | `t\|i`                  | `(tref t i)`               |
-| 41:42      | `\|l\|`                 | `(len l)`                  |
-| 52:22      | `⟨op⟩⟨rank⟩ t`          | `(⟨op⟩-⟨rank⟩ t)`          |
-| 77:15      | `(∇ f θ)`               | `(gradient-of f θ)`        |
-| 106:25     | `(• t u)`               | `(dot-product t u)`        |
-| 106:26     | `⟨op⟩⟨rank1⟩,⟨rank2⟩ t` | `(⟨op⟩-⟨rank1⟩-⟨rank2⟩ t)` |
-| 124:27     | `t\|\|b`                | `(trefs t b)`              |
-| 226:49     | `li↓`                   | `(refr l i)`               |
+| Page:Frame | Notation                         | Transcription              |
+|------------|----------------------------------|----------------------------|
+| 24:17      | `[ t ts …]`                      | `(tensor t ts …)`          |
+| 26:24      | $ l_i $                          | `(ref l i)`                |
+| 27:27      | `(list m …)`                     | `(list m …)`               |
+| 33:17      | ![tlent.png](assets/tlent.png) | `(tlen t)`                 |
+| 36:24      | $ t                              |_i $                 | `(tref t i)`               |
+| 41:42      | $                                |l|$            | `(len l)`                  |
+| 52:22      | `⟨op⟩⟨rank⟩ t`                   | `(⟨op⟩-⟨rank⟩ t)`          |
+| 77:15      | `(∇ f θ)`                        | `(gradient-of f θ)`        |
+| 106:25     | `(• t u)`                        | `(dot-product t u)`        |
+| 106:26     | `⟨op⟩⟨rank1⟩,⟨rank2⟩ t`          | `(⟨op⟩-⟨rank1⟩-⟨rank2⟩ t)` |
+| 124:27     | $ t\|_i $                        | `(trefs t b)`              |
+| 226:49     | `li↓`                            | `(refr l i)`               |
 
 For example, on page 52, frame 22, we introduce a hyphen between `sum` and `1` to transcribe $ sum^1 $ to `sum-1`, and on page 106, frame 26, we introduce a second hyphen to transcribe `•1,1` to `dot-product-1-1`.
 
