@@ -1,0 +1,17 @@
+#lang racket
+(require malt)
+
+; 1
+(define line-xs (tensor 2.0 1.0 4.0 3.0))
+(define line-ys (tensor 1.8 1.2 4.2 3.3))
+;; start point
+(define ys-v1 ((line line-xs) (list 0.0 0.0)))
+(- ys-v1 line-ys)
+;; loss
+(define l2-loss-v1
+  (lambda (xs ys)
+    (lambda (theta)
+      (let ((pred-ys ((line xs) theta)))
+        (sum
+          (sqr
+            (- ys pred-ys)))))))
