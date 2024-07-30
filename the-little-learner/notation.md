@@ -1,3 +1,10 @@
+# Notations
+
+## Some chars
+
+- ∇: nabla, used in vector calculus and partial differential equations.
+- λ: work well in `.rkt` files as `lambda` keyword
+
 ## Transcribing to Scheme
 
 We write some of our functions using a more compact notation so that they are easier to read and to fit snugly in the little boxes. Before running a program, be sure to transcribe our notation into Scheme code. The table below shows how to write these directly in Scheme.
