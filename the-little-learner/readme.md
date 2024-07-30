@@ -50,6 +50,20 @@
 
 See [notation.md](./notation.md)
 
+## Laws | Rules
+
+### The Law of Revision
+
+$$  \text{new } \theta_i = \theta_i - (\alpha \times \text{rate of change of loss w.r.t. } \theta_i)  $$
+
+> w.r.t.: with respect to
+
+$$  \theta_i \leftarrow \theta_i - \alpha \frac{\partial \text{Loss}}{\partial \theta_i}  $$
+
+### The Rule of Hyperparameters
+
+Every hyperparameter either is a scalar or has no value.
+
 ## Chapter Guide
 
 https://www.thelittlelearner.com/#ChapterGuide
@@ -57,3 +71,20 @@ https://www.thelittlelearner.com/#ChapterGuide
 ## Erratta
 
 https://www.thelittlelearner.com/#Errata
+
+## Index
+
+
+- 1
+- 2
+- 3a
+- 3
+- 4 Slippery Toys
+  - ∇ 78
+  - revise 80
+  - map 81
+  - gradient descent(draft) 89
+- 4a Hyperactive Toys
+
+  - **declare-hyper** 94
+  - **with-hypers** 94

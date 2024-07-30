@@ -1,3 +1,4 @@
+# Optimization by gradient descent
 
 frame 5
 ```
@@ -25,4 +26,16 @@ frame 5
 (obj (list 1.0 0.0))
 (obj (list 2.0 0.0))
 (obj (list 3.0 0.0))
+```
+
+30
+```scheme
+(let ((α 0.01)
+      (obj ((l2-loss line) line-xs line-ys)))
+  (let ((f (λ (θ)
+               (let ((gs (∇ obj θ)))
+                 (list
+                   W
+                   B)))))
+    (revise f 1000 (list 0.0 0.0))))
 ```

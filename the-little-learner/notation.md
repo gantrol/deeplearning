@@ -4,6 +4,7 @@
 
 - ∇: nabla, used in vector calculus and partial differential equations.
 - λ: work well in `.rkt` files as `lambda` keyword
+- e: `1.87e−06` is $$ 1.87 \times 10 ^ {−6} $$
 
 ## Transcribing to Scheme
 
