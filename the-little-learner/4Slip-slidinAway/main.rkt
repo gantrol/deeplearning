@@ -17,3 +17,9 @@
 ;; nabla ∇
 
 (∇ obj (list 0.0 0.0))
+
+(define revise
+  (λ (f revs θ)
+    (cond
+      [(zero? revs) θ]
+      [else (revise f (sub1 revs) (f θ))])))
