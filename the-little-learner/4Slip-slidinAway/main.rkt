@@ -41,34 +41,34 @@
 
 ;; gradient descent
 ;;; v1
-(let ((α 0.01)
+(let ((alpha 0.01)
       (obj ((l2-loss line) line-xs line-ys)))
   (let ((f (λ (θ)
              (let ((gs (∇ obj θ)))
                (list
-                (- (ref θ 0) (* α (ref gs 0)))
-                (- (ref θ 1) (* α (ref gs 1)))
+                (- (ref θ 0) (* alpha (ref gs 0)))
+                (- (ref θ 1) (* alpha (ref gs 1)))
                 )))))
     (revise f 1000 (list 0.0 0.0))))
 ;;; v2
-(let ((α 0.01)
+(let ((alpha 0.01)
       (obj ((l2-loss line) line-xs line-ys)))
   (let ((f (λ (θ)
              (let ((gs (∇ obj θ)))
                (map (λ (item grad)
-                      (- item (* α grad)))
+                      (- item (* alpha grad)))
                     θ
                     gs)))))
     (revise f 1000 (list 0.0 0.0))))
 ;;; v3
 (define revs 1000)
-(define α 0.01)
+(define alpha 0.01)
 
 (let ((obj ((l2-loss line) line-xs line-ys)))
   (let ((f (λ (θ)
              (let ((gs (∇ obj θ)))
                (map (λ (item grad)
-                      (- item (* α grad)))
+                      (- item (* alpha grad)))
                     θ
                     gs)))))
     (revise f revs (list 0.0 0.0))))
@@ -77,7 +77,7 @@
   (λ (obj θ)
     (let ((f (λ (big-theta)
              (map (λ (item grad)
-                      (- item (* α grad)))
+                      (- item (* alpha grad)))
                     big-theta
                     (∇ obj big-theta)))))
     (revise f revs θ))))
