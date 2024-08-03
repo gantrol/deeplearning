@@ -1,50 +1,47 @@
 # Notes for _The Little Learner_
 
+
+优点：由浅入深，层层递进  
+缺点：英文，且梗很多，对本地人而言，风趣幽默；对中国人来说，却不容易理解；Scheme语言比较冷门、与其他流行的编程语言差别很大；它还用了挺多非主流记号以缩短篇幅……（也就是说，不熟悉Scheme的人，要学两套记号）
+
+为了缓解部分缺点，弄了些GPTs
+
+图里有什么梗： https://chatgpt.com/g/g-K7Jm502Ul-tu-li-you-shi-yao-geng
+
+The little learner notation converter：https://chatgpt.com/g/g-zjprE6ZwY-the-little-learner-notation-converter
+
+笔记仓库：https://github.com/gantrol/deeplearning/tree/main/the-little-learner
+
 - https://www.thelittlelearner.com/
 - https://github.com/themetaschemer/malt
 
 ## Setup
 
 - [Racket](https://racket-lang.org/) 
-
 - malt
-
   - install
-
     - raco pkg install malt
-
     - the [Git repository](https://github.com/themetaschemer/malt.git)
-
         - For MacOS and Linux: 
-
           ```
           git clone https://github.com/themetaschemer/malt.git
           cd malt
           make
           make install
           ```
-
         - For Windows:
           ```
           git clone https://github.com/themetaschemer/malt.git
           cd malt
           raco pkg install
           ```
-
   - Using in code
-  
     ```scheme
     #lang racket
     (require malt)
     ```
-  
-    
-  
   - Reference
-  
     - [Documentation for Malt in the standard Racket format](https://docs.racket-lang.org/malt/index.html).
-
-
 
 ## Notation
 
@@ -153,7 +150,6 @@ https://www.thelittlelearner.com/#Errata
 
 - 1
 - 2
-
   - *scalar?* 32
   - [*e es* …] (where *e es* … are its elements) 33
   - ![tlent.png](assets/tlent.png) 33
@@ -162,7 +158,6 @@ https://www.thelittlelearner.com/#Errata
   - *scons* 40
   - $|ls|$ 41
   - rank 42
-
 - 3a
 - 3
 - 4 Slippery Toys
@@ -174,15 +169,12 @@ https://www.thelittlelearner.com/#Errata
   - **declare-hyper** 94
   - **with-hypers** 94
 - 5 Toys for Target Practice
-
   - gradient-descent 99
   - `(quad-xs, quad-ys)` 100
   - `quad` 102
   - `(plane-xs, plane-ys)` 104
   - `plane` 105
   - • (`dot-product`) 106
-
-
 - 6a Interlude III: The Shape of Things to Come
   - matrix 4
   - column matrix 6
@@ -195,7 +187,12 @@ https://www.thelittlelearner.com/#Errata
 - 7 Crazy Toys
   - gradient-descent 140
   - naked-gradient-descent 143
-- 
+- 8 Fast Toys
+  - $ \mu $
+  - *velocity-gradient-descent*
+- 9a Smooth Toys
+  - smooth
+
 
 
 
