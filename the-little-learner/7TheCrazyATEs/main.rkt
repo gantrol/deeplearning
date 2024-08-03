@@ -156,6 +156,6 @@ lonely-gradient-descent-v6
         (- big-p (* alpha grad))))
 
 (define naked-gradient-descent-v6
-  (gradient-descent-v5 naked-i naked-d naked-u))
+  (gradient-descent-v6 naked-i-v6 naked-d-v6 naked-u-v6))
 
 (try-plane naked-gradient-descent-v6)
