@@ -1,5 +1,7 @@
 # Optimization by gradient descent
 
+> chapter title: [Paul Simon | Slip Slidin' Away](https://www.youtube.com/watch?v=sz_5XJ4FccY)
+
 frame 5
 ```
 ((l2-loss line) line-xs line-ys)
