@@ -1,47 +1,50 @@
 # Notes for _The Little Learner_
 
-
-优点：由浅入深，层层递进  
-缺点：英文，且梗很多，对本地人而言，风趣幽默；对中国人来说，却不容易理解；Scheme语言比较冷门、与其他流行的编程语言差别很大；它还用了挺多非主流记号以缩短篇幅……（也就是说，不熟悉Scheme的人，要学两套记号）
-
-为了缓解部分缺点，弄了些GPTs
-
-图里有什么梗： https://chatgpt.com/g/g-K7Jm502Ul-tu-li-you-shi-yao-geng
-
-The little learner notation converter：https://chatgpt.com/g/g-zjprE6ZwY-the-little-learner-notation-converter
-
-笔记仓库：https://github.com/gantrol/deeplearning/tree/main/the-little-learner
-
 - https://www.thelittlelearner.com/
 - https://github.com/themetaschemer/malt
 
 ## Setup
 
 - [Racket](https://racket-lang.org/) 
+
 - malt
+
   - install
+
     - raco pkg install malt
+
     - the [Git repository](https://github.com/themetaschemer/malt.git)
+
         - For MacOS and Linux: 
+
           ```
           git clone https://github.com/themetaschemer/malt.git
           cd malt
           make
           make install
           ```
+
         - For Windows:
           ```
           git clone https://github.com/themetaschemer/malt.git
           cd malt
           raco pkg install
           ```
+
   - Using in code
+  
     ```scheme
     #lang racket
     (require malt)
     ```
+  
+    
+  
   - Reference
+  
     - [Documentation for Malt in the standard Racket format](https://docs.racket-lang.org/malt/index.html).
+
+
 
 ## Notation
 
@@ -137,6 +140,12 @@ As long as we make sure that *gradient-descent* accepts an initial ***θ*** and 
 
 For any representation, the three “ates” are concerned with only one parameter and its accompaniments, and are not directly concerned with either ***θ*** or Θ.
 
+### Chapter 9
+
+#### The Law of Gradient Descent
+
+The ***θ*** for a target function is learned by using one of the gradient descent functions.
+
 ## Chapter Guide
 
 https://www.thelittlelearner.com/#ChapterGuide
@@ -147,54 +156,133 @@ https://www.thelittlelearner.com/#Errata
 
 ## Index
 
+> The number in the first-level list represents the chapter. And `<number> a` is an Interlude before Chapter ` <number>`. For example, `3a` indicates an Interlude before Chapter 3.
+>
+> In the second-level of list, the number following each term represents the frame number within the corresponding chapter
+
 
 - 1
+
+  - `(line-xs, line-ys)`
+  - `line`
+  - $l_i$
+  - `(list m ...)`
+
 - 2
-  - *scalar?* 32
-  - [*e es* …] (where *e es* … are its elements) 33
-  - ![tlent.png](assets/tlent.png) 33
-  - $ t|_i $ 36
-  - *shape* 39
+  - *scalar?* 9
+  - [*e es* …] (where *e es* … are its elements) 10
+  - ![tlent.png](assets/tlent.png) 17
+  - $ t|_i $ 24
+  - *shape* 37
   - *scons* 40
-  - $|ls|$ 41
-  - rank 42
+  - $|ls|$ 42
+  - rank 44 [^rank]
 - 3a
-- 3
+
+  - `sum` 24
+
+- 3 Running Down a Slippery Slope | Lossy Toys
+
+  - `l2-loss` 22
+
 - 4 Slippery Toys
-  - ∇ 78
-  - revise 80
-  - map 81
-  - gradient descent(draft) 89
+  - ∇ 16
+  - revise 24
+  - map 25
+  - gradient descent(draft) 46
 - 5a Hyperactive Toys
-  - **declare-hyper** 94
-  - **with-hypers** 94
+  - **declare-hyper** 8
+  - **with-hypers** 9
 - 5 Toys for Target Practice
-  - gradient-descent 99
-  - `(quad-xs, quad-ys)` 100
-  - `quad` 102
-  - `(plane-xs, plane-ys)` 104
-  - `plane` 105
-  - • (`dot-product`) 106
+  - gradient-descent (with hyperparameters `revs` and $alpha$) 5
+  - `(quad-xs, quad-ys)` 8
+  - `quad` 15
+  - `(plane-xs, plane-ys)` 23
+  - `plane` 25
+  - • (`dot-product`) 26
 - 6a Interlude III: The Shape of Things to Come
   - matrix 4
   - column matrix 6
   - row matrix 7
 - 6 Random Toys (An Apple a Day)
-  - samples 123
-  - $ t||_b$ 124
-  - batch-size 126
-  - sampling-obj 127
+  - samples 24
+  - $ t||_b$ 27
+  - batch-size 34
+  - sampling-obj 36
 - 7 Crazy Toys
-  - gradient-descent 140
-  - naked-gradient-descent 143
+  - gradient-descent 38
+  - naked-gradient-descent 43
 - 8 Fast Toys
   - $ \mu $
   - *velocity-gradient-descent*
 - 9a Smooth Toys
   - smooth
+- 9 Be Adamant Faster Toys
+  - $ \beta $
+  - `rms-gradient-descent`
+  - `adam-gradient-descent`
+- 10a More Extendy Toys
+  - $ext1$
+  - $ sqrt^0 $
+  - $zeroes^0$
+  - $sum^1$
+  - $ flatten^2 $
+  - $ ext2 $
+  - $+^{0,0}$
+  - $*^{0,0}$
+  - $sqr$
+  - $*^{2,1}$
+- 10 Neural Toys
+  - rectify
+  - $linear^{1, 1}$
+  - $relu^{1,1}$
+- 11 Shapey Toys
+  - $\bullet^{2,1} \quad 219$
+  - $linear$
+  - $relu$
+  - $l_{i\downarrow} \quad (\text{where } l \text{ is nonempty and } i \text{ is positive}) \quad $ 
+  - $$  \textit{k-relu} \quad $$
+- 12 Blocky Toys
+
+  - block
+  - block-fn
+  - block-ls
+  - stack-blocks
+  - dense-block
+- 13 Classy Toys
+
+  - init-θ 262
+  - zero-tensor 263
+  - random-tensor 264
+  - (iris-test-xs, iris-test-ys) 265
+  - (iris-train-xs, iris-train-ys) 265
+  - iris-classifier 265
+  - iris-θ-shapes 265
+  - iris-θ 266
+  - model 267
+  - iris-model 267
+- 14a Training Toys
+
+  - accuracy
+  - grid-search
+- 14b Zippy Toys
+
+  - zipping signals
+- 14 Slidy Toys
+
+  - (morse-xs morse-ys)
+  - correlate
+- 15 Correlated Toys
+
+  - corr
+  - recu
+  - skip
+  - skip-block
+- 
 
 
 
+[^rank]: order of tensor, not Rank in matrix
 
 
 
