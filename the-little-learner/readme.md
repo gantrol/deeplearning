@@ -217,18 +217,20 @@ https://www.thelittlelearner.com/#Errata
   - *velocity-gradient-descent*
 - 9a Smooth Toys
   - smooth
-- 9 Be Adamant Faster Toys
+- 9 Be Adamant | Faster Toys
   - $ \beta $
   - `rms-gradient-descent`
   - `adam-gradient-descent`
-- 10a More Extendy Toys
-  - $ext1$
-  - $ sqrt^0 $
-  - $zeroes^0$
-  - $sum^1$
-  - $ flatten^2 $
-  - $ ext2 $
-  - $+^{0,0}$
+- [10a More Extendy Toys](10aExtensioMagnifico\readme.md)
+  - $ext1$ 23
+    - extending f with one argument
+  - $ sqrt^0 $ 23
+    - `of-rank`
+  - $zeroes^0$ 17(draft) 23
+  - $sum^1$ 24
+  - $ flatten^2 $ 27
+  - $ ext2 $ 35
+  - $+^{0,0}$ 
   - $*^{0,0}$
   - $sqr$
   - $*^{2,1}$
