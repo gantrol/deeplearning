@@ -146,11 +146,17 @@ For any representation, the three “ates” are concerned with only one paramet
 
 The ***θ*** for a target function is learned by using one of the gradient descent functions.
 
+### Chapter 10
+
+#### The Rule of Artificial Neurons
+
+An artificial neuron is a parameterized linear function composed with a nonlinear decider function
+
 ## Chapter Guide
 
 https://www.thelittlelearner.com/#ChapterGuide
 
-## Erratta
+## Errata
 
 https://www.thelittlelearner.com/#Errata
 

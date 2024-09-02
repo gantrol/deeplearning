@@ -1,11 +1,15 @@
 */ignore/
+*.bak
 books/*
 /llm/nn-zero-to-hero/build-nanogpt/
 /llm/nn-zero-to-hero/nn-zero-to-hero/
 /llm/nn-zero-to-hero/mlp/
-
+*/questions.md
 .idea/*
 
+# books
+*.pdf
+*.epub
 # videos
 *.vtt
 *webm
