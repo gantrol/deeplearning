@@ -152,6 +152,20 @@ The ***θ*** for a target function is learned by using one of the gradient desce
 
 An artificial neuron is a parameterized linear function composed with a nonlinear decider function
 
+### Chapter 12
+
+#### The Law of Blocks
+
+Blocks can be stacked to form bigger blocks and complete networks.
+
+### Chapter 13
+
+#### The Rule of Layer Initialization
+
+The bias $tensor^1$ of a layer is initialized to contain only 0.0
+
+The weight $tensor^2$ of a layer is initialized to random scalars with a central value of 0.0 and a variance of 2/*n* where *n* is the length of the input to the layer.
+
 ## Chapter Guide
 
 https://www.thelittlelearner.com/#ChapterGuide
